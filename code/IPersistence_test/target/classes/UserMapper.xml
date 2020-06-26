@@ -1,0 +1,23 @@
+<mapper namespace="com.lagou.dao.UserDao">
+
+    <select id="selectList" resultType="com.lagou.pojo.User">
+        select * from t_user_test
+    </select>
+
+    <select id="selectOne" paramterType="com.lagou.pojo.User" resultType="com.lagou.pojo.User">
+        select * from t_user_test where id = #{id} and username = #{username}
+    </select>
+
+    <delete id="deleteById" paramterType="java.lang.String">
+        delete from t_user_test where id = #{id}
+    </delete>
+
+    <insert id="insert" paramterType="com.lagou.pojo.User">
+        insert into t_user_test (id,username) values (#{id},#{username})
+    </insert>
+
+    <update id="update" paramterType="com.lagou.pojo.User">
+        update t_user_test set username = #{username} where id = #{id}
+    </update>
+
+</mapper>

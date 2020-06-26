@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+
+    <dataSource>
+        <property name="driverClass" value="com.mysql.jdbc.Driver"></property>
+        <property name="jdbcUrl" value="jdbc:mysql://172.18.1.117:3306/invoice-mindray"></property>
+        <property name="username" value="root"></property>
+        <property name="password" value="kingdee"></property>
+    </dataSource>
+
+    <mapper resource="UserMapper.xml"></mapper>
+
+</configuration>
